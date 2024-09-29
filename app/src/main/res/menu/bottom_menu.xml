@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Home item -->
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+    <!-- List a Pet item (immediately after Home) -->
+    <item
+        android:id="@+id/nav_list_pet"
+        android:icon="@drawable/list"
+        android:title="List a Pet" />
+
+    <!-- View Pets item -->
+    <item
+        android:id="@+id/nav_view"
+        android:icon="@drawable/view"
+        android:title="View Pets"/>
+
+    <!-- Profile item (at the right corner) -->
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/prof"
+        android:title="Profile"
+        app:showAsAction="always" />
+</menu>

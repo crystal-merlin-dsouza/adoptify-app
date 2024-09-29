@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="#121f3c"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="100dp">
+
+        <!-- Pet Image -->
+        <ImageView
+            android:id="@+id/tv_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription=" "
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="154dp"
+            android:layout_height="33dp"
+            android:capitalize="sentences"
+            android:gravity="clip_horizontal|center|center_vertical"
+            android:text=" "
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.548"
+            app:layout_constraintStart_toEndOf="@id/tv_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_breed"
+            android:layout_width="52dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="52dp"
+            android:backgroundTint="#A4C6E0"
+            android:text=" "
+            app:layout_constraintStart_toEndOf="@+id/tv_name"
+            app:layout_constraintTop_toTopOf="@+id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="11dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:text=" "
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/tv_image"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="67dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:text=" "
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/tv_image"
+            app:layout_constraintTop_toBottomOf="@+id/tv_age" />
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:text=" "
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/tv_breed"
+            app:layout_constraintHorizontal_bias="0.375"
+            app:layout_constraintStart_toStartOf="@+id/tv_age"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:text=" yrs  | "
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/tv_gender"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_age"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="17dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_location"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toEndOf="@+id/tv_image"
+            app:layout_constraintTop_toBottomOf="@+id/tv_age"
+            app:srcCompat="@drawable/loc" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

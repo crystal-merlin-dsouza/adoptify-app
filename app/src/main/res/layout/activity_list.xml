@@ -1,0 +1,86 @@
+<!-- res/layout/activity_list.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListActivity"
+    android:background="#121F3C"> <!-- Set the background color for the whole layout -->
+
+    <!-- Horizontal layout for Title TextViews -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"> <!-- Optional margin -->
+
+        <!-- Title TextView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:text="A" />
+
+        <!-- TextView for "doptify." -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="doptify."
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <!-- Pet Type Spinner -->
+        <Spinner
+            android:id="@+id/spinnerPetType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            android:background="#2196F3"
+        android:popupBackground="#2196F3"
+        android:padding="8dp"
+            android:layout_margin="8dp"/>
+
+        <!-- Location Spinner -->
+        <Spinner
+            android:id="@+id/spinnerLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            android:background="#2196F3"
+        android:popupBackground="#2196F3"
+        android:padding="8dp"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+    <!-- Filter Button -->
+    <Button
+        android:id="@+id/buttonApplyFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Apply Filter"
+        android:background="#2196F3"
+    android:textColor="#FFFFFF" />
+
+    <!-- RecyclerView for Listing Pets -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itmList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1" />
+</LinearLayout>
